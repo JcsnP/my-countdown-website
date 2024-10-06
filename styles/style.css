@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/Nunito-Regular.ttf");
+}
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Nunito";
+}
+
+.title1 {
+  @apply text-2xl font-bold;
+}
+
+.title2 {
+  @apply text-xl font-bold;
+}
+
+.download-button {
+  width: auto;
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+}
+
+.download-button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.download-button > img{
+  height: 4rem;
+}
+
+.drop-shadow-lg {
+      --tw-drop-shadow: drop-shadow(0 10px 8px rgba(33, 30, 30, 0.4)) drop-shadow(0 4px 3px rgba(56, 47, 47, 0.4));
+}
